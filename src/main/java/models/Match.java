@@ -5,18 +5,22 @@ import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name="matches")
 public class Match {
 
     private int id;
     private GregorianCalendar matchDate;
     private Set<Team> teams;
+    private Competition competition;
 
     public Match() {
     }
 
-    public Match(GregorianCalendar matchDate) {
+    public Match(GregorianCalendar matchDate, Competition competition) {
         this.matchDate = matchDate;
         this.teams = new HashSet<Team>();
+        this.competition = competition;
     }
 
     @Id
@@ -52,9 +56,35 @@ public class Match {
         this.teams = teams;
     }
 
-    public void addTeam(Team team){
-        if (getTeams().size() < 2){
-            this.teams.add(team);
+    public void addTeamsToMatch(Team team, Team team2){
+            if (getTeams().size() < 2) {
+                this.teams.add(team);
+                this.teams.add(team2);
+            }
+    }
+
+    public boolean regionalMatch(Team team, Team team2){
+        if(team.getContinent() == team2.getContinent()){
+            return true;
+        } else {
+            return false;
         }
+    }
+
+    public Continent returnRegionOfMatch(Team team, Team team2){
+        if (regionalMatch(team,team2)){
+            return team.getContinent();
+        }
+        return null;
+    }
+
+    @ManyToOne
+    @JoinColumn(name="competition_id", nullable = false)
+    public Competition getCompetition() {
+        return competition;
+    }
+
+    public void setCompetition(Competition competition) {
+        this.competition = competition;
     }
 }

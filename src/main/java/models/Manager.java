@@ -9,15 +9,13 @@ public class Manager {
     private int id;
     private String name;
     private int salary;
-    private Team team;
 
     public Manager() {
     }
 
-    public Manager(String name, int salary, Team team) {
+    public Manager(String name, int salary) {
         this.name = name;
         this.salary = salary;
-        this.team = team;
     }
 
     @Id
@@ -47,14 +45,5 @@ public class Manager {
 
     public void setSalary(int salary) {
         this.salary = salary;
-    }
-
-    @OneToOne(cascade = CascadeType.PERSIST)
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
     }
 }

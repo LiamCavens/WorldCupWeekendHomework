@@ -7,17 +7,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="competitions")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Competition {
 
     private int id;
     private String name;
-    private Set<models.Match> matches;
+    protected Set<models.Match> matches;
 
     public Competition() {
     }
 
-    public Competition(int id, String name) {
+    public Competition(String name) {
         this.id = id;
         this.name = name;
         this.matches = new HashSet<models.Match>();
@@ -43,7 +43,7 @@ public abstract class Competition {
         this.name = name;
     }
 
-    @OneToMany(mappedBy = "matches")
+    @OneToMany(mappedBy = "competition")
     public Set<models.Match> getMatches() {
         return matches;
     }

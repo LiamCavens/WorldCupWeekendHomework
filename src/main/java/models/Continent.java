@@ -1,6 +1,6 @@
 package models;
 
-public enum TeamContinent {
+public enum Continent {
     AFRICA,
     ASIA,
     EUROPE,

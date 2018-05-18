@@ -10,16 +10,14 @@ public class Player {
     private String name;
     private Team team;
     private int salary;
-    private int value;
 
     public Player() {
     }
 
-    public Player(String name, Team team, int salary, int value) {
+    public Player(String name, Team team, int salary) {
         this.name = name;
         this.team = team;
         this.salary = salary;
-        this.value = value;
     }
 
     @Id
@@ -59,14 +57,5 @@ public class Player {
 
     public void setSalary(int salary) {
         this.salary = salary;
-    }
-
-    @Column(name="value")
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 }

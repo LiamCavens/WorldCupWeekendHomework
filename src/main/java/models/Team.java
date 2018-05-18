@@ -1,7 +1,5 @@
 package models;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
-
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +10,7 @@ public class Team {
 
     private int id;
     private String country;
-    private TeamContinent continent;
+    private Continent continent;
     private String homeColours;
     private String awayColours;
     private Manager manager;
@@ -23,7 +21,7 @@ public class Team {
     public Team() {
     }
 
-    public Team(String country, TeamContinent continent, String homeColours, String awayColours, Manager manager, Stadium stadium) {
+    public Team(String country, Continent continent, String homeColours, String awayColours, Manager manager, Stadium stadium) {
         this.country = country;
         this.continent = continent;
         this.homeColours = homeColours;
@@ -55,11 +53,11 @@ public class Team {
     }
 
     @Enumerated(EnumType.STRING)
-    public TeamContinent getContinent() {
+    public Continent getContinent() {
         return continent;
     }
 
-    public void setContinent(TeamContinent continent) {
+    public void setContinent(Continent continent) {
         this.continent = continent;
     }
 
@@ -99,7 +97,7 @@ public class Team {
         this.stadium = stadium;
     }
 
-    @OneToMany(mappedBy = "teams")
+    @OneToMany(mappedBy = "team")
     public Set<Player> getPlayers() {
         return players;
     }

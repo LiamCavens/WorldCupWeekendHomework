@@ -7,14 +7,12 @@ import javax.persistence.*;
 public class Stadium {
 
     private int id;
-    private Team team;
     private String location;
 
     public Stadium() {
     }
 
-    public Stadium(Team team, String location) {
-        this.team = team;
+    public Stadium(String location) {
         this.location = location;
     }
 
@@ -27,15 +25,6 @@ public class Stadium {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    @OneToOne(cascade = CascadeType.PERSIST)
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
     }
 
     @Column(name="location")

@@ -5,11 +5,18 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">create-drop</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://localhost/</property>
+        <property name="connection.url">jdbc:postgresql://localhost/worldcupsDB</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="connection.pool_size">1</property>
         <property name="show_sql">true</property>
+        <mapping class="models.Manager"/>
+        <mapping class="models.Competition"/>
+        <mapping class="models.WorldCup"/>
+        <mapping class="models.Match"/>
+        <mapping class="models.Stadium"/>
+        <mapping class="models.Team"/>
+        <mapping class="models.Player"/>
     </session-factory>
 </hibernate-configuration>
