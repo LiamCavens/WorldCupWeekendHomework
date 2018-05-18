@@ -51,4 +51,8 @@ public abstract class Competition {
     public void setMatches(Set<models.Match> matches) {
         this.matches = matches;
     }
+
+    public void addMatch(models.Match match){
+        this.matches.add(match);
+    }
 }

@@ -108,6 +108,10 @@ public class Team {
         this.players = players;
     }
 
+    public void addPlayer(Player player){
+        this.players.add(player);
+    }
+
     @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name="team_matches",
             inverseJoinColumns = {@JoinColumn(name="match_id", nullable = false, updatable = false)},
