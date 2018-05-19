@@ -17,6 +17,7 @@ public class Team {
     private Stadium stadium;
     private Set<Player> players;
     private Set<models.Match> matches;
+    private int goals;
 
     public Team() {
     }
@@ -30,6 +31,7 @@ public class Team {
         this.stadium = stadium;
         this.players = new HashSet<Player>();
         this.matches = new HashSet<models.Match>();
+        this.goals = 0;
     }
 
     @Id
@@ -125,5 +127,13 @@ public class Team {
 
     public void addMatch(models.Match match){
         this.matches.add(match);
+    }
+
+    public int getGoals() {
+        return goals;
+    }
+
+    public void setGoals(int goals) {
+        this.goals = goals;
     }
 }

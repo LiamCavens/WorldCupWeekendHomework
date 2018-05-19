@@ -1,9 +1,7 @@
 package models;
 
 import javax.persistence.*;
-import java.util.GregorianCalendar;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name="matches")
@@ -86,5 +84,43 @@ public class Match {
 
     public void setCompetition(Competition competition) {
         this.competition = competition;
+    }
+
+//    public Team playMatch(Match match){
+//        ArrayList score = new ArrayList<Integer>();
+//        score.add(0, 0);
+//        score.add(1, 1);
+//        score.add(2, 2);
+//        score.add(3, 3);
+//        score.add(4, 4);
+//        score.add(5, 5);
+//        Random randomGenerator = new Random();
+//
+//        for(Team team : teams){
+//            team.setGoals(randomGenerator.nextInt(score.size()));
+//            System.out.println(team.getCountry() + " Score:" + team.getGoals());
+//            //return team with most goals
+//
+//        }
+//    }
+
+    public Team chooseWinner(Team team1, Team team2){
+        ArrayList teams = new ArrayList<Team>();
+        teams.add(team1);
+        teams.add(team2);
+        Random r = new Random();
+        Team randomTeam = (Team)teams.get(r.nextInt(teams.size()));
+        teams.add(team1);
+        teams.add(team2);
+        if (team1.getGoals() > team2.getGoals()){
+            return team1;
+        } else if
+            (team2.getGoals() > team1.getGoals()) {
+                return team2;
+            }
+         else {
+            System.out.println("Game goes to penalties");
+            return randomTeam;
+        }
     }
 }
