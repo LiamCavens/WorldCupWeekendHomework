@@ -31,4 +31,11 @@ public class MatchTest {
     public void worldCupHasName() {
         assertEquals("Moscow World Cup", worldCup.getName());
     }
+
+    @Test
+    public void matchHasWinner() {
+        team1.setGoals(5);
+        team2.setGoals(6);
+        assertEquals(team2, match.chooseWinner(team1, team2));
+    }
 }

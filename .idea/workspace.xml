@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d69bded8-1f2b-4534-9925-b15bc7e112c4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/MatchTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Match.java" afterPath="$PROJECT_DIR$/src/main/java/models/Match.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Team.java" afterPath="$PROJECT_DIR$/src/main/java/models/Team.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Runner.class" afterPath="$PROJECT_DIR$/target/classes/Runner.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Match.class" afterPath="$PROJECT_DIR$/target/classes/models/Match.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Team.class" afterPath="$PROJECT_DIR$/target/classes/models/Team.class" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatchTest.java" afterPath="$PROJECT_DIR$/src/test/java/MatchTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,8 +143,8 @@
       <file leaf-file-name="Match.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1182">
-              <caret line="115" column="25" lean-forward="false" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+            <state relative-caret-position="159">
+              <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#585#586#0" expanded="true" />
@@ -176,8 +171,8 @@
       <file leaf-file-name="MatchTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MatchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+            <state relative-caret-position="153">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#850#851#0" expanded="true" />
@@ -302,8 +297,8 @@
         <option value="$PROJECT_DIR$/src/main/java/db/DBMatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Match.java" />
         <option value="$PROJECT_DIR$/src/test/java/MatchTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Match.java" />
       </list>
     </option>
   </component>
@@ -429,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatchTest.worldCupHasName">
+  <component name="RunManager" selected="JUnit.MatchTest.matchHasWinner">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -463,6 +458,26 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="MatchTest.matchHasWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="hibernate_start" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MatchTest" />
+      <option name="METHOD_NAME" value="matchHasWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="MatchTest.matchHasWorldCup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -564,16 +579,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MatchTest.matchHasWorldCup" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.MatchTest.worldCupHasName" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MatchTest.matchHasWinner" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MatchTest.worldCupHasName" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MatchTest.matchHasWorldCup" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Runner" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MatchTest.matchHasWinner" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MatchTest.worldCupHasName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MatchTest.matchHasWorldCup" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -594,14 +611,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MatchTest_matchHasWorldCup - 2018.05.19 at 10h 33m 39s.xml">
-      <configuration name="MatchTest.matchHasWorldCup" configurationId="JUnit" />
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 19s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MatchTest_matchHasWorldCup - 2018.05.19 at 10h 34m 04s.xml">
-      <configuration name="MatchTest.matchHasWorldCup" configurationId="JUnit" />
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 22s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MatchTest_matchHasWorldCup - 2018.05.19 at 10h 34m 43s.xml">
-      <configuration name="MatchTest.matchHasWorldCup" configurationId="JUnit" />
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 24s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 26s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 28s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 31s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 34s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 36s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 39m 39s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatchTest_matchHasWinner - 2018.05.19 at 10h 40m 19s.xml">
+      <configuration name="MatchTest.matchHasWinner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -616,7 +654,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39378238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39378238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1019,16 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1039,10 +1067,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Match.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1182">
-          <caret line="115" column="25" lean-forward="false" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+        <state relative-caret-position="159">
+          <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
@@ -1067,8 +1105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MatchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        <state relative-caret-position="153">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#850#851#0" expanded="true" />

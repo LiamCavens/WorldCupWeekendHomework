@@ -105,22 +105,22 @@ public class Match {
 //    }
 
     public Team chooseWinner(Team team1, Team team2){
-        ArrayList teams = new ArrayList<Team>();
-        teams.add(team1);
-        teams.add(team2);
-        Random r = new Random();
-        Team randomTeam = (Team)teams.get(r.nextInt(teams.size()));
-        teams.add(team1);
-        teams.add(team2);
+//        ArrayList teams = new ArrayList<Team>();
+//        teams.add(team1);
+//        teams.add(team2);
+//        Random r = new Random();
+//        Team randomTeam = (Team)teams.get(r.nextInt(teams.size()));
+//        teams.add(team1);
+//        teams.add(team2);
         if (team1.getGoals() > team2.getGoals()){
             return team1;
-        } else if
-            (team2.getGoals() > team1.getGoals()) {
-                return team2;
-            }
-         else {
-            System.out.println("Game goes to penalties");
-            return randomTeam;
+        } else {
+            return team2;
         }
+
+//         else {
+//            System.out.println("Game goes to penalties");
+//            return randomTeam;
+//        }
     }
 }
