@@ -18,6 +18,7 @@ public class Team {
     private Set<Player> players;
     private Set<models.Match> matches;
     private int goals;
+    private int points;
 
     public Team() {
     }
@@ -32,6 +33,7 @@ public class Team {
         this.players = new HashSet<Player>();
         this.matches = new HashSet<models.Match>();
         this.goals = 0;
+        this.points = 0;
     }
 
     @Id
@@ -135,5 +137,13 @@ public class Team {
 
     public void setGoals(int goals) {
         this.goals = goals;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 }

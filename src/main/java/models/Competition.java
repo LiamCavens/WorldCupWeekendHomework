@@ -55,4 +55,9 @@ public abstract class Competition {
     public void addMatch(models.Match match){
         this.matches.add(match);
     }
+
+//    public void playTournament(){
+//        for(models.Match match : matches)
+//        }
+//    }
 }
