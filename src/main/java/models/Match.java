@@ -86,6 +86,7 @@ public class Match {
         this.competition = competition;
     }
 
+
 //    public Team playMatch(Match match){
 //        ArrayList score = new ArrayList<Integer>();
 //        score.add(0, 0);

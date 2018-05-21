@@ -89,6 +89,7 @@ public class Runner {
         DBHelper.saveOrUpdate(player12);
 
         List<Team> allTeams = DBHelper.getAll(Team.class);
+        List<Player> allPlayers = DBHelper.getAll(Player.class);
 
         match1.addTeamsToMatch(team1, team2);
         match2.addTeamsToMatch(team3, team4);
